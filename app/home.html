@@ -7,215 +7,733 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- Site Properties -->
-  <title>Sticky Example - Semantic</title>
+  <title>Responsive Elements - Semantic</title>
+  <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/unslider.css">
+  <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
 
-  <link rel="stylesheet" type="text/css" href="../semantic/dist/components/reset.css">
-  <link rel="stylesheet" type="text/css" href="../semantic/dist/components/site.css">
+</head>
+<body>
 
-  <link rel="stylesheet" type="text/css" href="../semantic/dist/components/container.css">
-  <link rel="stylesheet" type="text/css" href="../semantic/dist/components/grid.css">
-  <link rel="stylesheet" type="text/css" href="../semantic/dist/components/header.css">
-  <link rel="stylesheet" type="text/css" href="../semantic/dist/components/image.css">
-  <link rel="stylesheet" type="text/css" href="../semantic/dist/components/menu.css">
+<!-- Menu Top and Bottom -->
+<div class="ui container">
+  <div class="ui sticky">
+    <div class="ui top borderless main menu fixed segment">
+      <div class="centered item">
+        <div class="productname"><h2>Seniman</h2></div>
+      </div>
+      <div class="right menu">
+        <a class="item"><i class="large shop icon"></i></a>
+      </div>
+    </div>
+    <div class="ui labeled icon bottom fixed three item menu">
+      <a class="item"><i class="home icon"></i>Home</a>
+      <a class="item"><i class="child icon"></i>Sculptor</a>
+      <a class="item"><i class="paint brush icon"></i>Product</a>
+    </div>
+  </div>
+</div>
 
-  <link rel="stylesheet" type="text/css" href="../semantic/dist/components/divider.css">
-  <link rel="stylesheet" type="text/css" href="../semantic/dist/components/list.css">
-  <link rel="stylesheet" type="text/css" href="../semantic/dist/components/segment.css">
-  <link rel="stylesheet" type="text/css" href="../semantic/dist/components/dropdown.css">
-  <link rel="stylesheet" type="text/css" href="../semantic/dist/components/icon.css">
-  <link rel="stylesheet" type="text/css" href="../semantic/dist/components/transition.css">
 
-  <script src="../assets/library/jquery-3.1.1.min.js"></script>
-  <script src="../semantic/dist/components/transition.js"></script>
-  <script src="../semantic/dist/components/dropdown.js"></script>
-  <script src="../semantic/dist/components/visibility.js"></script>
-  <script>
-  $(document)
-    .ready(function() {
-      // fix main menu to page on passing
-      $('.main.menu').visibility({
-        type: 'fixed'
-      });
-      $('.overlay').visibility({
-        type: 'fixed',
-        offset: 80
-      });
-      // lazy load images
-      $('.image').visibility({
-        type: 'image',
-        transition: 'vertical flip in',
-        duration: 500
-      });
-      // show dropdown on hover
-      $('.main.menu  .ui.dropdown').dropdown({
-        on: 'hover'
-      });
-    })
-  ;
-  </script>
+<h1 class="ui center aligned header">"get your awesome sculptures from local sculptor today."</h1>
+<div class="container"><div class="ui divider"></div></div>
+  <div class="container">
+    <div class="ui fluid image">
+      <img class="ui medium rounded image" src="https://virginiavagabonds.files.wordpress.com/2011/02/img_7944.jpg">
+    </div>
+  </div>
 
-  <style type="text/css">
+<h2 class="ui center aligned header">Most Rated Sculptors</h2>
+
+<div class="ui six doubling cards">
+  <div class="card">
+    <div class="image">
+      <img src="/images/avatar/large/elliot.jpg">
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="/images/avatar/large/helen.jpg">
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="/images/avatar/large/jenny.jpg">
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="/images/avatar/large/veronika.jpg">
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="/images/avatar/large/stevie.jpg">
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="/images/avatar/large/steve.jpg">
+    </div>
+  </div>
+</div>
+
+
+
+<h3 class="ui center aligned header">Container</h3>
+<div class="ui container">
+  <div class="ui segments">
+    <div class="ui segment">Content</div>
+    <div class="ui segment">Content</div>
+    <div class="ui segment">Content</div>
+    <div class="ui segment">Content</div>
+  </div>
+</div>
+<h3 class="ui center aligned header">Text Container</h3>
+<div class="ui text container">
+  <div class="ui segments">
+    <div class="ui segment">Content</div>
+    <div class="ui segment">Content</div>
+    <div class="ui segment">Content</div>
+    <div class="ui segment">Content</div>
+  </div>
+</div>
+
+<h3 class="ui center aligned header">Stackable Grid</h3>
+<div class="ui two column stackable grid">
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="three column row">
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+  </div>
+  <div class="ten wide column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="six wide column">
+    <div class="ui segment">Content</div>
+  </div>
+</div>
+
+
+<h3 class="ui center aligned header">Doubling Grid</h3>
+<div class="ui three column doubling grid">
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+</div>
+
+<h3 class="ui center aligned header">Doubling Stackable Grid</h3>
+<div class="ui three column doubling stackable grid">
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+</div>
+
+<h3 class="ui center aligned header">Nested Stackable Grid</h3>
+<div class="ui two column grid">
+  <div class="column">
+    <div class="ui stackable doubling two column grid">
+      <div class="column">
+        <div class="ui segment">Content</div>
+      </div>
+      <div class="column">
+        <div class="ui segment">Content</div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui stackable doubling three column grid">
+      <div class="column">
+        <div class="ui segment">Content</div>
+      </div>
+      <div class="column">
+        <div class="ui segment">Content</div>
+      </div>
+      <div class="column">
+        <div class="ui segment">Content</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<h3 class="ui center aligned header">Stackable Grid Container</h3>
+<div class="ui two column stackable grid container">
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+</div>
+
+
+<h3 class="ui center aligned header">Doubling Grid Container</h3>
+<div class="ui three column doubling grid container">
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+</div>
+
+<h3 class="ui center aligned header">Doubling Stackable Grid Container</h3>
+<div class="ui three column doubling stackable grid container">
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+</div>
+
+<h2 class="ui center aligned header">Device Adjustment</h2>
+
+<h3 class="ui center aligned header">Device Column Width</h3>
+<div class="ui grid">
+  <div class="three wide computer nine wide tablet six wide mobile column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="four wide column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="nine wide computer three wide tablet six wide mobile column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="nine wide computer three wide tablet six wide mobile column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="four wide column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="three wide computer nine wide tablet six wide mobile column">
+    <div class="ui segment">Content</div>
+  </div>
+</div>
+
+<h3 class="ui center aligned header">Device Visibility</h3>
+<div class="ui four column grid">
+  <div class="widescreen only ten wide column">
+    <div class="ui segment">Widescreen</div>
+  </div>
+  <div class="widescreen only six wide column">
+    <div class="ui segment">Widescreen</div>
+  </div>
+  <div class="large screen only six wide column">
+    <div class="ui segment">Large Screen</div>
+  </div>
+  <div class="large screen only ten wide column">
+    <div class="ui segment">Large Screen</div>
+  </div>
+  <div class="tablet only mobile only eight wide column">
+    <div class="ui segment">Tablet and Mobile</div>
+  </div>
+  <div class="tablet only mobile only eight wide column">
+    <div class="ui segment">Tablet and Mobile</div>
+  </div>
+  <div class="mobile only sixteen wide column">
+    <div class="ui segment">Mobile</div>
+  </div>
+  <div class="computer only two column row">
+    <div class="column">
+      <div class="ui segment">Computer and Up</div>
+    </div>
+    <div class="column">
+      <div class="ui segment">Computer and Up</div>
+    </div>
+  </div>
+  <div class="tablet only column">
+    <div class="ui segment">Tablet Only Content</div>
+  </div>
+  <div class="tablet only column">
+    <div class="ui segment">Tablet Only Content</div>
+  </div>
+  <div class="tablet only column">
+    <div class="ui segment">Tablet Only Content</div>
+  </div>
+  <div class="tablet only column">
+    <div class="ui segment">Tablet Only Content</div>
+  </div>
+</div>
+
+
+<h2 class="ui center aligned header">Responsive Grid with Variations</h2>
+
+<h3 class="ui center aligned header">Stackable Divided Grid</h3>
+<div class="ui stackable two column divided grid container">
+  <div class="row">
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+  </div>
+</div>
+
+<h3 class="ui center aligned header">Stackable Vertically Divided Grid</h3>
+<div class="ui stackable two column vertically divided grid container">
+  <div class="row">
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+  </div>
+</div>
+
+<h3 class="ui center aligned header">Celled Stackable Grid</h3>
+<div class="ui stackable celled grid container">
+  <div class="two column row">
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+  </div>
+  <div class="three column row">
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+  </div>
+  <div class="two column row">
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+  </div>
+</div>
+<h3 class="ui center aligned header">Consecutive Doubling Stackable Grid</h3>
+<div class="doubling stackable three column ui grid container">
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+</div>
+<div class="doubling stackable three column ui grid container">
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+</div>
+
+<h3 class="ui center aligned header">Grid Container</h3>
+<div class="ui three column grid container">
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+  <div class="column">
+    <div class="ui segment">Content</div>
+  </div>
+</div>
+
+<h1 class="ui center aligned header">Responsive Elements</h1>
+
+
+<h3 class="ui center aligned header">Responsive Vertical Divider</h3>
+
+  <div class="ui stackable two column very relaxed grid container" style="position:relative;">
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+    <div class="ui vertical divider">
+      Or
+    </div>
+    <div class="column">
+      <div class="ui segment">Content</div>
+    </div>
+  </div>
+
+
+<h3 class="ui center aligned header">Responsive Table</h3>
+
+<div class="ui container">
+  <table class="ui celled table">
+    <thead>
+      <th>Employee</th>
+      <th>Correct Guesses</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <h4 class="ui image header">
+            <img src="assets/images/wireframe/square-image.png" class="ui mini rounded image">
+            <div class="content">
+              Lena
+              <div class="sub header">Human Resources
+            </div>
+          </div>
+        </td>
+        <td>
+          22
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4 class="ui image header">
+            <img src="assets/images/wireframe/square-image.png" class="ui mini rounded image">
+            <div class="content">
+              Matthew
+              <div class="sub header">Fabric Design
+            </div>
+          </div>
+        </td>
+        <td>
+          15
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4 class="ui image header">
+            <img src="assets/images/wireframe/square-image.png" class="ui mini rounded image">
+            <div class="content">
+              Lindsay
+              <div class="sub header">Entertainment
+            </div>
+          </div>
+        </td>
+        <td>
+          12
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4 class="ui image header">
+            <img src="assets/images/wireframe/square-image.png" class="ui mini rounded image">
+            <div class="content">
+              Mark
+              <div class="sub header">Executive
+            </div>
+          </div>
+        </td>
+        <td>
+          11
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 class="ui center aligned header">Responsive Menu</h3>
+
+<div class="ui stackable container menu">
+  <div class="item">
+    <img src="assets/images/logo.png">
+  </div>
+  <a class="item">Features</a>
+  <a class="item">Testimonials</a>
+  <a class="item">Sign-in</a>
+</div>
+
+<h3 class="ui center aligned header">Responsive Item</h3>
+
+<div class="ui container">
+  <div class="ui relaxed divided items">
+    <div class="item">
+      <div class="ui small image">
+        <img src="assets/images/wireframe/image.png">
+      </div>
+      <div class="content">
+        <a class="header">Content Header</a>
+        <div class="meta">
+          <a>Date</a>
+          <a>Category</a>
+        </div>
+        <div class="description">
+          A description which may flow for several lines and give context to the content.
+        </div>
+        <div class="extra">
+          <img src="assets/images/wireframe/square-image.png" class="ui circular avatar image"> Username
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="ui small image">
+        <img src="assets/images/wireframe/image.png">
+      </div>
+      <div class="content">
+        <a class="header">Content Header</a>
+        <div class="meta">
+          <a>Date</a>
+          <a>Category</a>
+        </div>
+        <div class="description">
+          A description which may flow for several lines and give context to the content.
+        </div>
+        <div class="extra">
+          <div class="ui right floated primary button">
+            Primary
+            <i class="right chevron icon"></i>
+          </div>
+          <div class="ui label">Limited</div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="ui small image">
+        <img src="assets/images/wireframe/image.png">
+      </div>
+      <div class="content">
+        <a class="header">Content Header</a>
+        <div class="meta">
+          <a>Date</a>
+          <a>Category</a>
+        </div>
+        <div class="description">
+          A description which may flow for several lines and give context to the content.
+        </div>
+        <div class="extra">
+          <div class="ui right floated primary button">
+            Primary
+            <i class="right chevron icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3 class="ui center aligned header">Responsive Steps</h3>
+
+<div class="ui last container">
+  <div class="ui three steps">
+    <div class="step">
+      <div class="content">
+        <div class="title">Shipping</div>
+        <div class="description">Choose your shipping options</div>
+      </div>
+    </div>
+    <div class="active step">
+      <div class="content">
+        <div class="title">Billing</div>
+        <div class="description">Enter billing information</div>
+      </div>
+    </div>
+    <div class="disabled step">
+      <div class="content">
+        <div class="title">Confirm Order</div>
+        <div class="description">Review your order details</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Content JS HERE !-->
+
+<style type="text/css">
   body {
-    background-color: #FFFFFF;
+    background-color: #fbfbfb;
   }
-  .main.container {
-    margin-top: 2em;
-  }
-  .main.menu {
-    margin-top: 4em;
-    border-radius: 0;
-    border: none;
-    box-shadow: none;
-    transition:
-      box-shadow 0.5s ease,
-      padding 0.5s ease
-    ;
-  }
-  .main.menu .item img.logo {
+  .ui.menu .item img.logo {
     margin-right: 1.5em;
   }
-  .overlay {
-    float: left;
-    margin: 0em 3em 1em 0em;
+  .main.container {
+    margin-top: 7em;
   }
-  .overlay .menu {
-    position: relative;
-    left: 0;
-    transition: left 0.5s ease;
-  }
-  .main.menu.fixed {
-    background-color: #FFFFFF;
-    border: 1px solid #DDD;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-  }
-  .overlay.fixed .menu {
-    left: 800px;
-  }
-  .text.container .left.floated.image {
-    margin: 2em 2em 2em -4em;
-  }
-  .text.container .right.floated.image {
-    margin: 2em -4em 2em 2em;
+  .wireframe {
+    margin-top: 2em;
   }
   .ui.footer.segment {
     margin: 5em 0em 0em;
     padding: 5em 0em;
   }
-  </style>
+  .main.menu.fixed {
+    background-color: #fbfbfb;
+    border: 1px solid #DDD;
+  }
+</style>
 
-</head>
-<body>
+<style>
+  .last.container {
+    margin-bottom: 300px !important;
+  }
+  h1.ui.center.header {
+    margin-top: 5.5em;
+    margin-bottom: 3.5em;
+  }
+  h2.ui.center.header {
+    margin: 4em 0em 2em;
+  }
+  h3.ui.center.header {
+    margin-top: 2em;
+    padding: 2em 0em;
+  }
+</style>
 
-  <div class="ui main text container">
-    <h1 class="ui header">Sticky Example</h1>
-    <p>This example shows how to use lazy loaded images, a sticky menu, and a simple text container</p>
-  </div>
 
+<script src="../assets/library/jquery.min.js"></script>
+<script src="../assets/library/unslider.js"></script>
+<script src="../semantic/dist/semantic.min.js"></script>
+<script type="text/javascript">
 
-  <div class="ui borderless main menu">
-    <div class="ui text container">
-      <div href="#" class="header item">
-        <img class="logo" src="../assets/images/logo.png">
-        Project Name
-      </div>
-      <a href="#" class="item">Blog</a>
-      <a href="#" class="item">Articles</a>
-      <a href="#" class="ui right floated dropdown item">
-        Dropdown <i class="dropdown icon"></i>
-        <div class="menu">
-          <div class="item">Link Item</div>
-          <div class="item">Link Item</div>
-          <div class="divider"></div>
-          <div class="header">Header Item</div>
-          <div class="item">
-            <i class="dropdown icon"></i>
-            Sub Menu
-            <div class="menu">
-              <div class="item">Link Item</div>
-              <div class="item">Link Item</div>
-            </div>
-          </div>
-          <div class="item">Link Item</div>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="ui text container">
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <div class="overlay">
-      <div class="ui labeled icon vertical menu">
-        <a class="item"><i class="twitter icon"></i> Tweet</a>
-        <a class="item"><i class="facebook icon"></i> Share</a>
-        <a class="item"><i class="mail icon"></i> E-mail</a>
-      </div>
-    </div>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <img class="ui medium left floated image" data-src="assets/images/wireframe/square-image.png">
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-    <img class="ui medium right floated image" data-src="assets/images/wireframe/square-image.png">
-    Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <img class="ui medium left floated image" data-src="assets/images/wireframe/square-image.png">
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-    <img class="ui medium right floated image" data-src="assets/images/wireframe/square-image.png">
-    Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-  </div>
-
-  <div class="ui inverted vertical footer segment">
-    <div class="ui center aligned container">
-      <div class="ui stackable inverted divided grid">
-        <div class="three wide column">
-          <h4 class="ui inverted header">Group 1</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Link One</a>
-            <a href="#" class="item">Link Two</a>
-            <a href="#" class="item">Link Three</a>
-            <a href="#" class="item">Link Four</a>
-          </div>
-        </div>
-        <div class="three wide column">
-          <h4 class="ui inverted header">Group 2</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Link One</a>
-            <a href="#" class="item">Link Two</a>
-            <a href="#" class="item">Link Three</a>
-            <a href="#" class="item">Link Four</a>
-          </div>
-        </div>
-        <div class="three wide column">
-          <h4 class="ui inverted header">Group 3</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Link One</a>
-            <a href="#" class="item">Link Two</a>
-            <a href="#" class="item">Link Three</a>
-            <a href="#" class="item">Link Four</a>
-          </div>
-        </div>
-        <div class="seven wide column">
-          <h4 class="ui inverted header">Footer Header</h4>
-          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
-        </div>
-      </div>
-      <div class="ui inverted section divider"></div>
-      <img src="assets/images/logo.png" class="ui centered mini image">
-      <div class="ui horizontal inverted small divided link list">
-        <a class="item" href="#">Site Map</a>
-        <a class="item" href="#">Contact Us</a>
-        <a class="item" href="#">Terms and Conditions</a>
-        <a class="item" href="#">Privacy Policy</a>
-      </div>
-    </div>
-  </div>
+  jQuery(document).ready(function($) {
+			$('.home-slider').unslider({
+        autoplay: true
+      });
+		});
+</script>
 </body>
-
 </html>
