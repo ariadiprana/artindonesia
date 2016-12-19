@@ -35,21 +35,20 @@ function detailProduct(){
             </div>
             <div class="field">
               <label>Full Address</label>
-              <textarea placeholder="Full Address"></textarea>
+              <textarea name="full-address" placeholder="Full Address"></textarea>
             </div>
             <div class="field">
               <label>Contact Number</label>
               <input type="text" name="contact" placeholder="Contact Number">
             </div>
+            <div class="ui black deny button">
+              Close
+            </div>
+            <button class="ui button green" type="submit">Submit</button>
           </form>
         </div>
       </div>
-      <div class="actions">
-        <div class="ui black deny button">
-          Close
-        </div>
-        <button class="ui button green" type="submit">Submit</button>
-      </div>
+
     </div>
 
 
