@@ -3,8 +3,7 @@ $(function() {
 });
 
 function order(){
-  $('.ui.modal').modal('show')
-;
+  $('.ui.modal').modal('show');
 }
 
 function cleanUp(){
@@ -31,12 +30,8 @@ function detailProduct(){
           <p>We will contact you upon you fill informations below</p>
           <form class="ui form">
             <div class="field">
-              <label>First Name</label>
-              <input type="text" name="first-name" placeholder="First Name">
-            </div>
-            <div class="field">
-              <label>Last Name</label>
-              <input type="text" name="last-name" placeholder="Last Name">
+              <label>Full Name</label>
+              <input type="text" name="full-name" placeholder="Full Name">
             </div>
             <div class="field">
               <label>Full Address</label>
@@ -46,13 +41,6 @@ function detailProduct(){
               <label>Contact Number</label>
               <input type="text" name="contact" placeholder="Contact Number">
             </div>
-            <div class="field">
-              <div class="ui checkbox">
-                <input type="checkbox" tabindex="0" class="hidden">
-                <label>I agree to the Terms and Conditions</label>
-              </div>
-            </div>
-
           </form>
         </div>
       </div>
