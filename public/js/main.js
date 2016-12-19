@@ -78,12 +78,10 @@ function detailProduct(){
                 <label class="ui red label"><h3>IDR 15.000.000 ,-</h3></label>
               </div>
               <h1 class="display-3">Patung Kayu Bali</h1>
-              <div class="ui green vertical animated button" tabindex="0" onclick="order()">
-                <div class="hidden content">Order</div>
-                <div class="visible content">
-                  <i class="shop icon"></i>
-                </div>
-              </div>
+              <button class="ui labeled icon green button" onclick="order()">
+                <i class="shop icon"></i>
+                Order
+              </button>
               <h3>Sculptured by</h3>
               <img class="img-fluid" src="/images/sculptors/sculptor_1.jpg"  alt="Card image cap">
               <h1 class="display-4">I Made Perwira</h1>
