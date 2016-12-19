@@ -58,6 +58,25 @@ function detailProduct(){
 
 
     <div class="container">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <center>
+              <br>
+              <h1 class="display-3">Patung Kayu Bali</h1>
+              <div class="ui pointing green basic label">
+                <h3>Available</h3>
+                <label class="ui red label"><h3>IDR 15.000.000 ,-</h3></label>
+              </div>
+              <br><br>
+              <button class="ui labeled icon green button" onclick="order()">
+                <i class="shop icon"></i>
+                Order
+              </button>
+          </center>
+        </div>
+      </div>
+      <div class="divider"></div>
       <div class="row">
         <div class="col-sm-4">
           <img class="img-fluid" src="/images/products/products_1.jpg" alt="Card image cap">
@@ -67,25 +86,6 @@ function detailProduct(){
         </div>
         <div class="col-sm-4">
           <img class="img-fluid" src="/images/products/products_3.jpg" alt="Card image cap">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <center>
-              <br>
-              <div class="ui pointing below green basic label">
-                <h3>Available</h3>
-                <label class="ui red label"><h3>IDR 15.000.000 ,-</h3></label>
-              </div>
-              <h1 class="display-3">Patung Kayu Bali</h1>
-              <button class="ui labeled icon green button" onclick="order()">
-                <i class="shop icon"></i>
-                Order
-              </button>
-              <h3>Sculptured by</h3>
-              <img class="img-fluid" src="/images/sculptors/sculptor_1.jpg"  alt="Card image cap">
-              <h1 class="display-4">I Made Perwira</h1>
-          </center>
         </div>
       </div>
 
@@ -125,7 +125,19 @@ function detailProduct(){
           </div>
         </div>
       </div>
+      <div class="ui divider"></div>
+      <div class="row">
+        <div class="col-sm-12">
+          <center>
+            <h3>Sculptured by</h3>
+            <img class="img-fluid" src="/images/sculptors/sculptor_1.jpg"  alt="Card image cap">
+            <h1 class="display-4">I Made Perwira</h1>
+          </center>
+        </div>
+      </div>
     </div>
+
+    <br><br><br><br><br>
   `)
 }
 
