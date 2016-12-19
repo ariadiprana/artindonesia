@@ -1,0 +1,12 @@
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.space-up{
+  padding: .2rem 10px;
+}
+
+.divider {
+    margin: 3em 0em 3em;
+  }
