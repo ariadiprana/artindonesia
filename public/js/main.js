@@ -149,13 +149,21 @@ function detailSculptor(){
   $("#sculptor").html(`
     <div class="container">
       <div class="row">
+        <div class="col-sm-12">
+          <center>
+              <br>
+              <h1 class="display-3">Adi Boromeus</h1>
+              <h6 class="card-subtitle text-muted">63 Sculptures</h6>
+          </center>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
         <div class="col-sm-4">
           <img class="img-fluid" src="images/sculptors/sculptor_1.jpg" alt="Card image cap">
         </div>
         <div class="col-sm-8">
           <div class="card-block">
-              <h1 class="display-4">Andi Boromeus</h1>
-              <h6 class="card-subtitle text-muted">63 Sculptures</h6>
               <div class="divider"></div>
               <h1 class="display-6">Profile</h1>
 
