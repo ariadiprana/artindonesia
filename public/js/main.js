@@ -80,12 +80,15 @@ function detailProduct(){
       <div class="row">
         <div class="col-sm-4">
           <img class="img-fluid" src="/images/products/products_1.jpg" alt="Card image cap">
+          <div class="caption"><p>Front Side</p></div>
         </div>
         <div class="col-sm-4">
-          <img class="img-fluid" src="/images/products/products_2.jpg" alt="Card image cap">
+          <img class="img-fluid" src="/images/products/products_1.jpg" alt="Card image cap">
+          <div class="caption"><p>Left Side</p></div>
         </div>
         <div class="col-sm-4">
-          <img class="img-fluid" src="/images/products/products_3.jpg" alt="Card image cap">
+          <img class="img-fluid" src="/images/products/products_1.jpg" alt="Card image cap">
+          <div class="caption"><p>Back Side</p></div>
         </div>
       </div>
 
